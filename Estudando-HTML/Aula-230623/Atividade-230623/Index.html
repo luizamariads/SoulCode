@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Tabelas</title>
+    </head>
+    <body>
+        <h1>Tabelas</h1>
+
+        <h2>Pessoas</h2>
+        <!-- Escopo -> bloco de código-->
+        <!-- <table> -> Estrutura de uma tabela em HTML-->
+        <!--<tr> -> linha de uma tabela-->
+        <!-- <td> -> Representa a celula da tabela (coluna, e deixa o texto mais na esquerda) ---->
+        <!-- colocando o atributo "border" em <table> coloca borda na tabela, porem a coloração vermelha nele indica que esse recurso não se utiliza mais, alguns navegadores não irão reconhecer, borda se coloca com o CSS-->
+        <!-- atalho para criar mais de um <td> tr>td*3-->
+        <!-- <th> Representa o titulo da coluna (deixa o titulo da coluna em negrito, e deixa o titulo centralizado)-->
+        <!-- Colocando o "colspan" decide quantas colunas uma linha vai ocupar-->
+        <!-- Colocando o "rowspan" decide quantas linhas uma coluna vai ocupar-->
+        <table border="1" style="width: 100%;"> <!-- width:100% -> indica que a tabela deve ocupar a largura total da tela -->
+          <!-- <colgroup> e <col> -> Tags auxiliares para estilização das colunas na tabela-->
+          <colgroup>
+            <col style="width: 30%;">
+            <col style="width: 20%;">
+            <col style="width: 50%;">
+          </colgroup>
+          
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>E-mail</th>
+            </tr>
+            <tr>
+                <td>Fernando</td>
+                <td>27 anos</td>
+                <td>fernando@exemplo.com.br</td>
+            </tr>
+            <tr>
+                <td>Bruna</td>
+                <td>30 anos</td>
+                <td>bruna@exemplo.com.br</td>
+            </tr>
+            <tr>
+                <td>Monique</td>
+                <td>25 anos</td>
+                <td>monique@exemplo.com.br</td>
+            </tr>
+        </table>
+        <h2>Tabuada soma 2</h2>
+        <table border="1">
+            <tr>
+                <th>Operação</th>
+                <th>Resultado</th>
+            </tr>
+            <tr>
+                <td>2 + 0 =</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>2 + 1 =</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>2 + 2 =</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>2 + 3 =</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>2 + 4 =</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>2 + 5 =</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>2 + 6 =</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>2 + 7 =</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>2 + 8 =</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>2 + 9 =</td>
+                <td>11</td>
+            </tr>
+        </table>
+        <h2>Times de futebol</h2>
+        <!-- <thead> Define o cabeçalho da tabela-->
+        <!-- <tdoby> -> Define o corpo da tabela-->
+        <!-- <tfoot> -> Define o rodapé da tabela-->
+        <table border="1">
+          <!--Cabeçalho da tabela-->
+            <thead>
+                <tr>
+                    <th colspan="4">Classificação times no brasileirão</th>
+                </tr>
+                <tr>
+                    <th>Nome</th>
+                    <th>Pontos</th>
+                    <th>Saldo de gols</th>
+                    <th>Vitórias</th>
+                </tr>
+            </thead>
+            <!-- Corpo da tabela-->
+            <tbody>
+                <tr>
+                    <td>Fluminense</td>
+                    <td>20</td>
+                    <td>9</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Corinthians</td>
+                    <td>70</td>
+                    <td>25</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Flamengo</td>
+                    <td>25</td>
+                    <td>10</td>
+                    <td rowspan="2">10</td>
+                </tr>
+                <tr>
+                    <td>Palmeiras</td>
+                    <td>90</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+<!--Rodapé da tabela-->
+            <tfoot>
+                <tr>
+                    <td colspan="4">
+                        <a href="https://ge.globo.com/futebol/brasileirao-serie-a/"
+                            target="_blank">
+                            Acesse nosso site www.brasileirao.com</a>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</html>

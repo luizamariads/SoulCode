@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1> Formulários</h1>
+    <!-- <form> -> Estrutura base de um formulário HTML-->
+    <!--<input type="text"> -> Define um campo no formulário-->
+    <!-- <button> -> Botão-->
+    <form>
+        Teste:
+        <input type="text" pattern="[0-9]{4,8}"><br>
+        Nome:
+        <input type="text" name="Nome" placeholder="Digite seu nome completo"><br>
+        E-mail:
+        <input type="email" name="email"placeholder="luiza@exemple.com"><br>
+        Senha:
+        <input type="password" name="senha" minlength="6"><br>
+        Idade:
+        <input type="number" name="Idade" min="0" max="30"><br>
+        Horario de registro:
+        <input type="time" name="Horario"value="15:00" disabled><br>
+        Data de nascimento:
+        <input type="date" name="data" min="2005-01-01"><br>
+        Telefone:
+        <input type="tel" name="Telefone"><br>
+        URL da foto 
+        <input type="text" name="foto"><br>
+        Frente do RG:
+        <input type="file" accept=".png, .jpg" multiple name="rg"><br>
+        Escolha sua cor favorita:
+        <input type="color" name="cor"><br>
+        Estado civil:<br>
+        Solteiro<input type="radio" name="estado-civil" value="solteiro"><br>
+        Casado<input type="radio" name="estado-civil" value="casado"><br>
+        Amasiado<input type="radio" name="estado-civil" value="Amasiado"><br>
+        Aceito os termos de uso:
+        <input type="checkbox" name=""><br>
+        Não ceito os termos de uso:
+        <input type="checkbox"><br>
+        Nivel de ingles: 1<input type="range" min="1" max="5" step="1">5<br>
+        Estado:
+        <select name="estado">
+            <option disabled selected>Selecione um estado</option>
+            <option>Ceará</option>
+            <option>São Paulo</option>
+            <option>Rio de janeiro</option>
+        </select><br>
+        Fale um pouco sobre voce:<br>
+        <textarea cols="30" rows="3" placeholder="Digite sua descrição"></textarea><br>
+        <!--
+            Button ->Botão comum (Auxilia na execução de um evento Javascript)
+            Submit -> Submete as informações do formulario
+            Reset -> Limpar os campos de um formulario 
+        -->
+        <button type="button" >Não faz nada</button>
+        <button type="reset" >Limpar</button>
+        <button type="submit" >Enviar</button>
+        <br>
+        <input type="button" value="Não faz nada">
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+<!--
+    Value -> Indica o valor do campo
+-->

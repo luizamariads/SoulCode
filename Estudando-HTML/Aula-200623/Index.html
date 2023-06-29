@@ -1,0 +1,78 @@
+<!--
+HTML -> HyperText Markup Language (Linguagem de Marcação de Hiper Texto)
+* tag -> é uma determinada marcação que especifica um componente na página 
+* atributo -> é uma caracteristica que é aplicada sobre um componente da página (tag) 
+* anatomia da tag -> "<nome-da-tag>"
+-->
+<!--Ctrl + S = Salvar 
+Ctrl + z = Desfazer 
+Ctrl + Shift + z = Refazer 
+Ctrl + F = Busca 
+Ctrl + D = Seleciona multiplas palavras 
+CRTL + : = Comenta a linha que está selecionado 
+Ctrl + B = Miniza e abre a lateral 
+Ctrl + J = Abre e fecha o terminal
+Alt + Z = Quebra as linhas que ultrapassam a tela
+! + Tab = Gera a estruta base do documento HTML
+-->
+
+<!DOCTYPE html> <!--Indica a versão 5 do HTML-->
+<html lang="pt-BR"> <!--tag de abertura (lang é um atributo e tem que ser dentro do colchete, pode ter mais de um atributo)-->
+    <head><!--Aqui vai a cabeça da página/ tudo que nao vai aparecer na página (configurações da página) -->
+        <meta name="author" content="Luiza Dias"> <!-- Convencional colocar as metas tags antes do title-->
+        <meta name=" description" content="Esse site foi desenvolvido na primeira aula de HTML"> 
+        <meta charset="UTF-8"><!--Define que os caracteres da página é brasileiro-->
+        <meta name="keywords" content="html, internet, meta tags"> <!-- Auxilia os buscadores que o site pertence ao escopo da pesquisa-->
+        <title>Site de Exemplo</title> <!--nome que aparece na guia do navegador-->
+    </head>
+    <body> <!-- Aqui vai o corpo da página, tudo que aparece no site-->
+        <h1>Titulo de Exemplo 1</h1> <!-- h1 titulo-->
+        <h2>titulo de exemplo 2</h2><!--h2 subtitulo-->
+        <h3>titulo de exemplo 3</h3><!--h3 subtitulo menor que o h2--> 
+        <h4>titulo de exemplo 4</h4><!--h4 subtitulo menor que o h3--> 
+        <h5>titulo de exemplo 5</h5><!--h5 subtitulo menor que o h4--> 
+        <h6>titulo de exemplo 6</h6><!--h6 subtitulo menor que o h5--> 
+        <P><!-- p significa paragrafo-->
+            Texto de exemplo <!--paragrafo-->
+            &rarr; &lt;html&gt;
+        </P> <!--o texto pode ser em mais de uma linha-->
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, eveniet esse! Consequuntur beatae, consectetur quos possimus inventore exercitationem labore nam fugiat perferendis. Maiores, iure eaque! Dolor sint minima facilis eos.
+        </p>
+        <p>
+            Earum, eveniet esse! Consequuntur beatae, consectetur quos possimus inventore exercitationem labore nam fugiat perferendis. Maiores, iure eaque! Dolor sint minima facilis eos
+            <hr> <!--horizontal row (tag da linha horizontal)-->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit quas voluptate, dicta architecto similique dolorum aut quos culpa
+            <br> <!-- break row (tag de quebra de linha)-->
+            ipsa autem officiis nihil vero omnis eius modi minima voluptates blanditiis praesentium.
+        </p>
+        <p>
+            <!-- tipos de negrito: bold, semi-bold, extra-bold (No HTML utiliza o bold geralmente e no CSS coloca o negrito que desejamos)-->
+            <!-- <b> -> Negrito (muda a aparencia)-->
+            <!-- <strong> Negrito (muda a aparencia e deixa o texto mais semanticamente relevante, até para os buscadores)-->
+            <!-- <i> deixa o texto em italico (aparencia)-->
+            <!-- <em> deixa o texto em italico (Aparencia + relevancia)-->
+            <!-- <small> Deixa o texto um pouco menor -->
+            <!-- <u> deixa o texto sublinhado-->
+            <b>Lorem</b> ipsum dolor sit amet consectetur adipisicing elit. <u>Et deleniti</u> molestiae <i>voluptate</i> recusandae inventore <em>vero</em> asperiores <u><i>voluptatum</i></u> ullam minima reiciendis nam quod, <small>quo tempora</small> ut repudiandae quia <strong>aliquam</strong> aspernatur <strong>dolorum</strong>.
+        </p>
+        <pre> <!-- Um texto pré formatado (ele copia exatamente como está escrito no código, se escrever no meio da página vai aparecer no meio da tela) -->  
+Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+
+Odio porro nisi animi dolore saepe debitis nulla,quam harum tempore architecto.
+
+Ad similique saepe nisi nam, voluptas minima distinctio corrupti iusto.
+        </pre>
+        <pre>
+            2<sup>2</sup> = 4 <!-- <sup> deixa o texto sobescrito-->
+            log<sub>2</sub>4 = 2 <!-- <sub> deixa o texto subescrito -->
+        </pre>
+        <!-- <code> para escrever os códigos-->
+        <code>
+            var num = 2; <br>
+            console.log(num); <br>
+            &lt;html&gt; este é um código html &lt;/html&gt; 
+        </code>
+    </body> 
+</html>  <!--tag de fechamento-->
+

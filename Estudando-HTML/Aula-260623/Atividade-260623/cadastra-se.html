@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Cadastre-se.html</title>
+    </head>
+    <body>
+        <h1>Formulário de cadastro</h1>
+        <hr />
+        <h3>Responda as questões abaixo para efutuar o seu cadastro.</h3>
+        <p>Os campos com * são obrigatórios</p>
+
+        <hr />
+        <form>
+            
+            <fieldset>
+                <legend>Informações pessoais</legend>
+                <table>
+                    <tr><td><label for="nome"> Nome completo:</label>  </td> 
+                    <td><input type="text" name="nome" id="nome"placeholder="Ex: Maria da Silva" maxlength="200"required/>*  </td></tr>
+                    <tr>
+                        <td><label for="email">E-mail:</label> </td> 
+                        <td><input type="email"name="email" id="email"placeholder="Exemplo@exemplo.com"required/>*</td>
+                    </tr>
+                    <tr>
+                        <td><label for="senha">Senha:</label> </td>
+                        <td><input type="password"name="senha" id="senha"placeholder="Ex:12345678"pattern="[0-8] {5,8}" required/>*</td>
+                    </tr>
+                    <tr>
+                        <td><label for="atuaçao">Área de atuação:*</label> </td>
+                        <td><select name="atuacao" id="atuacao" required>
+                    <option value="" selected disabled>
+                        Selecione a sua área de atuação
+                    </option>
+                    <option value="fullstack">Full stack</option>
+                    <option value="cloud">Cloud</option>
+                    <option value="fullstack, cloud">Ambos</option></select> </td>
+                    </tr>
+                    <tr>
+                        <td><label for="bio">Fale um pouco sobre voce:*</label>  </td>
+                        <td><textarea cols="30" rows="4" name="bio" id="bio" placeholder="Conte nos sobre voce" required></textarea> </td>
+                    </tr>
+            </table>
+            </fieldset>
+            <fieldset> 
+                <legend>Informações de endereço</legend>
+                <table>
+                <tr>
+                    <td><label for="estado">UF:</label> </td>
+                    <td><select name="estado" id="estado" required>
+                <option disabled selected>Selecione um estado</option>
+                <option>AC</option>
+                <option>AL</option>
+                <option>AP</option>
+                <option>AM</option>
+                <option>BA</option>
+                <option>CE</option>
+                <option>ES</option>
+                <option>GO</option>
+                <option>MA</option>
+                <option>MT</option>
+                <option>MS</option>
+                <option>MG</option>
+                <option>PA</option>
+                <option>PB</option>
+                <option>PR</option>
+                <option>PE</option>
+                <option>PI</option>
+                <option>RJ</option>
+                <option>RN</option>
+                <option>RS</option>
+                <option>RO</option>
+                <option>RR</option>
+                <option>SC</option>
+                <option>SP</option>
+                <option>SE</option>
+                <option>TO</option></select>* </td>
+            </tr>
+            <tr>
+                <td><label for="cidade">Cidade:</label> </td>
+                <td> <input type="text" name="estado" id="cidade" placeholder="Ex:São Bernardo do campo" maxlength="200" required />* </td>
+        </tr>
+        <tr>
+            <td><label for="rua">Logradouro:</label> </td>
+            <td><input type="text" name="rua" id="rua" maxlength="100" required />* </td>
+        </tr>
+        <tr>
+                <td><label for="numero">Número:</label> </td>
+                <td><input type="text" name="numero" id="numero" maxlength="50" required />* </td>
+        </tr>
+        <tr>
+            <td><label for="cep">CEP:</label></td>
+            <td><input type="text" name="cep" id="cep" placeholder="xx.xxx-xxx" maxlength="10" required />* </td>
+        </tr>
+        </table>
+            </fieldset>
+            <button>Enviar</button>
+        <button type="reset">Limpar</button>
+        </form>
+        
+    </body>
+</html>
