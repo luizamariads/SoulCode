@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aqua;
+}
+
+.container-1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.item-1 {
+    background-color: bisque;
+}
+
+.item-2{
+    background-color: bisque ;
+
+}
+
+.item-3 {
+    background-color: bisque;
+}
+
+.item-1,
+.item-2,
+.item-3 {
+    width: 500px;
+    padding: 8px;
+}
+
+.container-1 img { 
+    width: 200px;
+    height: 100px;
+}

@@ -1,0 +1,31 @@
+/*
+Media queries = regras especiais (pode ser aplicada ou não) 
+
+@media condição { 
+        // estilos a serem aplicado caso a condição seja verdadeira 
+}
+*/
+
+ *{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{ 
+    background-color: teal;
+}
+
+@media screen and (max-width: 499px) {
+    body {
+        background-color: red;
+        font-family: monospace;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        background-color: olive;
+        font-family: monospace;
+    }
+}
